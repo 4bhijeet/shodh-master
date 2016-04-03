@@ -1,0 +1,25 @@
+{
+  "solr": {
+    "twitter": {
+      "nodeConfig": {
+        "host": "shodh-l7hc6e06.cloudapp.net",
+        "port": 8983,
+        "coreName": "twitter"
+      }
+    },
+    "webhose": {
+      "nodeConfig": {
+        "host": "shodh-l7hc6e06.cloudapp.net",
+        "port": 8983,
+        "coreName": "webhose"
+      }
+    },
+    "wikipedia": {
+      "nodeConfig": {
+        "host": "uakkc205f273.araani.koding.io",
+        "port": 8983,
+        "coreName": "partb2"
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "solr": {
+    "twitter": {
+      "nodeConfig": {
+        "host": "uakkc205f273.araani.koding.io",
+        "port": 8983,
+        "coreName": "partb2"
+      }
+    },
+    "webhose": {
+      "nodeConfig": {
+        "host": "uakkc205f273.araani.koding.io",
+        "port": 8983,
+        "coreName": "partb2"
+      }
+    },
+    "wikipedia": {
+      "nodeConfig": {
+        "host": "uakkc205f273.araani.koding.io",
+        "port": 8983,
+        "coreName": "partb2"
+      }
+    }
+  }
+}

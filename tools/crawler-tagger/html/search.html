@@ -1,0 +1,448 @@
+<html lang="en" data-ng-app="angle" class="ng-scope backgroundsize bgpositionshorthand bgpositionxy bgrepeatround bgrepeatspace bgsizecover borderradius cssanimations csscalc csstransforms supports csstransforms3d csstransitions no-flexboxtweener fontface inlinesvg localstorage multiplebgs preserve3d sessionstorage smil svgclippaths svgfilters svgforeignobject canvas todataurljpeg todataurlpng todataurlwebp"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <meta name="description" content="Angular Bootstrap Admin Template">
+   <meta name="keywords" content="app, responsive, angular, bootstrap, dashboard, admin">
+   <title data-ng-bind="::pageTitle()" class="ng-binding">Angle - Angular Bootstrap Admin Template</title>
+   <!-- Bootstrap styles-->
+   <!-- ngIf: !app.layout.isRTL --><link rel="stylesheet" href="app/css/bootstrap.css" data-ng-if="!app.layout.isRTL" class="ng-scope"><!-- end ngIf: !app.layout.isRTL -->
+   <!-- ngIf: app.layout.isRTL -->
+   <!-- Application styles-->
+   <!-- ngIf: !app.layout.isRTL --><link rel="stylesheet" href="app/css/app.css" data-ng-if="!app.layout.isRTL" class="ng-scope"><!-- end ngIf: !app.layout.isRTL -->
+   <!-- ngIf: app.layout.isRTL -->
+   <!-- Themes-->
+   <!-- ngIf: app.layout.theme -->
+<script src="vendor/fastclick/lib/fastclick.js" async=""></script><script src="vendor/Flot/jquery.flot.js" async=""></script><script src="vendor/modernizr/modernizr.custom.js" async=""></script><script src="vendor/flot.tooltip/js/jquery.flot.tooltip.min.js" async=""></script><script src="vendor/Flot/jquery.flot.resize.js" async=""></script><script src="vendor/Flot/jquery.flot.pie.js" async=""></script><script src="vendor/Flot/jquery.flot.time.js" async=""></script><script src="vendor/Flot/jquery.flot.categories.js" async=""></script><script src="vendor/flot-spline/js/jquery.flot.spline.min.js" async=""></script><link type="text/css" rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css"><link type="text/css" rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css"><script src="vendor/screenfull/dist/screenfull.js" async=""></script><link type="text/css" rel="stylesheet" href="vendor/weather-icons/css/weather-icons.min.css"><link type="text/css" rel="stylesheet" href="vendor/weather-icons/css/weather-icons-wind.min.css"><script src="vendor/animo.js/animo.js" async=""></script><script src="vendor/sparkline/index.js" async=""></script><style type="text/css"></style><script src="vendor/slimScroll/jquery.slimscroll.min.js" async=""></script><script src="vendor/jquery-classyloader/js/jquery.classyloader.min.js" async=""></script><link type="text/css" rel="stylesheet" href="vendor/angularjs-toaster/toaster.css"><script src="vendor/angularjs-toaster/toaster.js" async=""></script><link type="text/css" rel="stylesheet" href="vendor/whirl/dist/whirl.css"><script src="vendor/moment/min/moment-with-locales.min.js" async=""></script><link type="text/css" rel="stylesheet" href="vendor/chosen_v1.2.0/chosen.min.css"><script src="vendor/chosen_v1.2.0/chosen.jquery.min.js" async=""></script><script src="vendor/angular-chosen-localytics/chosen.js" async=""></script><link type="text/css" rel="stylesheet" href="vendor/seiyria-bootstrap-slider/dist/css/bootstrap-slider.min.css"><script src="vendor/seiyria-bootstrap-slider/dist/bootstrap-slider.min.js" async=""></script><script src="vendor/angular-bootstrap-slider/slider.js" async=""></script><style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style><style id="__web-inspector-hide-shortcut-style__" type="text/css">
+.__web-inspector-hide-shortcut__, .__web-inspector-hide-shortcut__ *, .__web-inspector-hidebefore-shortcut__::before, .__web-inspector-hideafter-shortcut__::after
+{
+    visibility: hidden !important;
+}
+</style></head>
+
+<body data-ng-class="{ 'layout-fixed' : app.layout.isFixed, 'aside-collapsed' : app.layout.isCollapsed, 'layout-boxed' : app.layout.isBoxed, 'layout-fs': app.useFullLayout, 'hidden-footer': app.hiddenFooter, 'layout-h': app.layout.horizontal, 'aside-float': app.layout.isFloat, 'offsidebar-open': app.offsidebarOpen, 'aside-toggled': app.asideToggled}" class="layout-fixed aside-collapsed">
+   <div data-preloader="" class="preloader preloader-hidden" style=""><div class="preloader-progress"><div class="preloader-progress-bar" ng-style="{width: loadCounter + '%'}" style="width: 100%;"></div></div></div>
+   <!-- uiView:  --><div data-ui-view="" data-autoscroll="false" class="wrapper ng-scope"><!-- top navbar-->
+<!-- ngInclude: 'app/views/partials/top-navbar.html' --><header ng-include="'app/views/partials/top-navbar.html'" class="topnavbar-wrapper ng-scope"><!-- START Top Navbar-->
+<nav role="navigation" class="navbar topnavbar ng-scope">
+   <!-- START navbar header-->
+   <div class="navbar-header">
+      <a href="#/" class="navbar-brand">
+         <div class="brand-logo">
+            <img src="app/img/logo.png" alt="App Logo" class="img-responsive">
+         </div>
+         <div class="brand-logo-collapsed" style="width: 218px;height: 45px;align-self: stretch;left: inherit;">
+   
+
+           <h3 class="ng-scope" style="color: white;margin: 10px;margin-left: 30%;"><strong class="icon-magnifier" style=""></strong>  <b>Shodh...</b></h3>
+
+         </div>
+      </a>
+   </div>
+   <!-- END navbar header-->
+   <!-- START Nav wrapper-->
+   <div class="nav-wrapper">
+      <!-- START Left navbar-->
+      <ul class="nav navbar-nav">
+         <li>
+            <!-- Button used to collapse the left sidebar. Only visible on tablet and desktops-->
+            
+            <!-- Button to show/hide the sidebar on mobile. Visible on mobile only.-->
+            <a href="" ng-click="app.asideToggled = !app.asideToggled" class="visible-xs sidebar-toggle">
+               <em class="fa fa-navicon"></em>
+            </a>
+         </li>
+         <!-- START User avatar toggle-->
+         <li>
+            <!-- Button used to collapse the left sidebar. Only visible on tablet and desktops-->
+            
+         </li>
+         <!-- END User avatar toggle-->
+         <!-- START lock screen-->
+         <li>
+            
+         </li>
+         <!-- END lock screen-->
+      </ul>
+      <!-- END Left navbar-->
+      <!-- START Right Navbar-->
+      <ul class="nav navbar-nav navbar-right">
+         <!-- Search icon-->
+         <li>
+            
+         </li>
+         <!-- Fullscreen (only desktops)-->
+         <li class="visible-lg">
+            
+         </li>
+         <!-- START Alert menu-->
+         <li uib-dropdown="" class="dropdown dropdown-list">
+            
+            <!-- START Dropdown menu-->
+            <ul class="dropdown-menu animated flipInX">
+               <li>
+                  <!-- START list group-->
+                  <div class="list-group">
+                     <!-- list item-->
+                     <a href="" class="list-group-item">
+                        <div class="media-box">
+                           <div class="pull-left">
+                              <em class="fa fa-twitter fa-2x text-info"></em>
+                           </div>
+                           <div class="media-box-body clearfix">
+                              <p class="m0">New followers</p>
+                              <p class="m0 text-muted">
+                                 <small>1 new follower</small>
+                              </p>
+                           </div>
+                        </div>
+                     </a>
+                     <!-- list item-->
+                     <a href="" class="list-group-item">
+                        <div class="media-box">
+                           <div class="pull-left">
+                              <em class="fa fa-envelope fa-2x text-warning"></em>
+                           </div>
+                           <div class="media-box-body clearfix">
+                              <p class="m0">New e-mails</p>
+                              <p class="m0 text-muted">
+                                 <small>You have 10 new emails</small>
+                              </p>
+                           </div>
+                        </div>
+                     </a>
+                     <!-- list item-->
+                     <a href="" class="list-group-item">
+                        <div class="media-box">
+                           <div class="pull-left">
+                              <em class="fa fa-tasks fa-2x text-success"></em>
+                           </div>
+                           <div class="media-box-body clearfix">
+                              <p class="m0">Pending Tasks</p>
+                              <p class="m0 text-muted">
+                                 <small>11 pending task</small>
+                              </p>
+                           </div>
+                        </div>
+                     </a>
+                     <!-- last list item -->
+                     <a href="" class="list-group-item">
+                        <small translate="topbar.notification.MORE" class="ng-scope"><span class="ng-scope">More notifications</span></small>
+                        <span class="label label-danger pull-right">14</span>
+                     </a>
+                  </div>
+                  <!-- END list group-->
+               </li>
+            </ul>
+            <!-- END Dropdown menu-->
+         </li>
+         <!-- END Alert menu-->
+         <!-- START Offsidebar button-->
+         <li>
+            
+         </li>
+         <!-- END Offsidebar menu-->
+      </ul>
+      <!-- END Right Navbar-->
+   </div>
+   <!-- END Nav wrapper-->
+   <!-- START Search form-->
+   <form role="search" action="search.html" class="navbar-form ng-pristine ng-valid">
+      <div class="form-group has-feedback">
+         <input type="text" placeholder="Type and hit enter.." class="form-control">
+         <div search-dismiss="search-dismiss" class="fa fa-times form-control-feedback"></div>
+      </div>
+      <button type="submit" class="hidden btn btn-default">Submit</button>
+   </form>
+   <!-- END Search form-->
+</nav>
+<!-- END Top Navbar--></header>
+<!-- sidebar-->
+<!-- ngInclude: 'app/views/partials/sidebar.html' -->
+<!-- offsidebar-->
+<!-- ngInclude: 'app/views/partials/offsidebar.html' -->
+<!-- Main section-->
+<section class="ng-scope" style="
+    margin-right: 55px;
+">
+   <!-- Page content-->
+   <!-- uiView:  --><div ui-view="" autoscroll="false" ng-class="app.viewAnimation" class="content-wrapper ng-scope ng-fadeInUp">
+<div class="row ng-scope">
+   <div class="col-lg-12">
+      <div class="form-group mb-xl" style="
+    /* width: 100%; */
+    margin-top: 20px;
+">
+         <input style="
+    width: 96%;
+    margin: 0% !important;
+    display: inline-block;
+    " placeholder="Search products, people, apps, etc." type="text" class="form-control mb">
+  <button type="button" class="pull-right btn btn-default" style="
+    height: 35px !important;
+"><strong class="icon-magnifier" style=""></strong></button>
+         <div class="clearfix __web-inspector-hide-shortcut__">
+            
+            
+         </div>
+      </div>
+      <!-- START panel-->
+      
+   </div>
+   <div class="col-lg-3">
+      <h3 class="m0 pb-lg">Filters</h3>
+      <div class="form-group mb-xl">
+         <label class="control-label mb">by Text</label>
+         <br>
+         <select chosen="" ng-model="searchState" class="chosen-select form-control ng-pristine ng-untouched ng-valid localytics-chosen" style="display: none;"><option value="? undefined:undefined ?"></option>
+            <optgroup label="Alaskan/Hawaiian Time Zone">
+               <option value="AK">Alaska</option>
+               <option value="HI">Hawaii</option>
+            </optgroup>
+            <optgroup label="Pacific Time Zone">
+               <option value="CA">California</option>
+               <option value="NV">Nevada</option>
+               <option value="OR">Oregon</option>
+               <option value="WA">Washington</option>
+            </optgroup>
+            <optgroup label="Mountain Time Zone">
+               <option value="AZ">Arizona</option>
+               <option value="CO">Colorado</option>
+               <option value="ID">Idaho</option>
+               <option value="MT">Montana</option>
+               <option value="NE">Nebraska</option>
+               <option value="NM">New Mexico</option>
+               <option value="ND">North Dakota</option>
+               <option value="UT">Utah</option>
+               <option value="WY">Wyoming</option>
+            </optgroup>
+            <optgroup label="Central Time Zone">
+               <option value="AL">Alabama</option>
+               <option value="AR">Arkansas</option>
+               <option value="IL">Illinois</option>
+               <option value="IA">Iowa</option>
+               <option value="KS">Kansas</option>
+               <option value="KY">Kentucky</option>
+               <option value="LA">Louisiana</option>
+               <option value="MN">Minnesota</option>
+               <option value="MS">Mississippi</option>
+               <option value="MO">Missouri</option>
+               <option value="OK">Oklahoma</option>
+               <option value="SD">South Dakota</option>
+               <option value="TX">Texas</option>
+               <option value="TN">Tennessee</option>
+               <option value="WI">Wisconsin</option>
+            </optgroup>
+            <optgroup label="Eastern Time Zone">
+               <option value="CT">Connecticut</option>
+               <option value="DE">Delaware</option>
+               <option value="FL">Florida</option>
+               <option value="GA">Georgia</option>
+               <option value="IN">Indiana</option>
+               <option value="ME">Maine</option>
+               <option value="MD">Maryland</option>
+               <option value="MA">Massachusetts</option>
+               <option value="MI">Michigan</option>
+               <option value="NH">New Hampshire</option>
+               <option value="NJ">New Jersey</option>
+               <option value="NY">New York</option>
+               <option value="NC">North Carolina</option>
+               <option value="OH">Ohio</option>
+               <option value="PA">Pennsylvania</option>
+               <option value="RI">Rhode Island</option>
+               <option value="SC">South Carolina</option>
+               <option value="VT">Vermont</option>
+               <option value="VA">Virginia</option>
+               <option value="WV">West Virginia</option>
+            </optgroup>
+         </select><div class="chosen-container chosen-container-single" style="width: 274px;" title=""><a class="chosen-single chosen-default" tabindex="-1"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"><li class="group-result">Alaskan/Hawaiian Time Zone</li><li class="active-result group-option" data-option-array-index="2">Alaska</li><li class="active-result group-option" data-option-array-index="3">Hawaii</li><li class="group-result">Pacific Time Zone</li><li class="active-result group-option" data-option-array-index="5">California</li><li class="active-result group-option" data-option-array-index="6">Nevada</li><li class="active-result group-option" data-option-array-index="7">Oregon</li><li class="active-result group-option" data-option-array-index="8">Washington</li><li class="group-result">Mountain Time Zone</li><li class="active-result group-option" data-option-array-index="10">Arizona</li><li class="active-result group-option" data-option-array-index="11">Colorado</li><li class="active-result group-option" data-option-array-index="12">Idaho</li><li class="active-result group-option" data-option-array-index="13">Montana</li><li class="active-result group-option" data-option-array-index="14">Nebraska</li><li class="active-result group-option" data-option-array-index="15">New Mexico</li><li class="active-result group-option" data-option-array-index="16">North Dakota</li><li class="active-result group-option" data-option-array-index="17">Utah</li><li class="active-result group-option" data-option-array-index="18">Wyoming</li><li class="group-result">Central Time Zone</li><li class="active-result group-option" data-option-array-index="20">Alabama</li><li class="active-result group-option" data-option-array-index="21">Arkansas</li><li class="active-result group-option" data-option-array-index="22">Illinois</li><li class="active-result group-option" data-option-array-index="23">Iowa</li><li class="active-result group-option" data-option-array-index="24">Kansas</li><li class="active-result group-option" data-option-array-index="25">Kentucky</li><li class="active-result group-option" data-option-array-index="26">Louisiana</li><li class="active-result group-option" data-option-array-index="27">Minnesota</li><li class="active-result group-option" data-option-array-index="28">Mississippi</li><li class="active-result group-option" data-option-array-index="29">Missouri</li><li class="active-result group-option" data-option-array-index="30">Oklahoma</li><li class="active-result group-option" data-option-array-index="31">South Dakota</li><li class="active-result group-option" data-option-array-index="32">Texas</li><li class="active-result group-option" data-option-array-index="33">Tennessee</li><li class="active-result group-option" data-option-array-index="34">Wisconsin</li><li class="group-result">Eastern Time Zone</li><li class="active-result group-option" data-option-array-index="36">Connecticut</li><li class="active-result group-option" data-option-array-index="37">Delaware</li><li class="active-result group-option" data-option-array-index="38">Florida</li><li class="active-result group-option" data-option-array-index="39">Georgia</li><li class="active-result group-option" data-option-array-index="40">Indiana</li><li class="active-result group-option" data-option-array-index="41">Maine</li><li class="active-result group-option" data-option-array-index="42">Maryland</li><li class="active-result group-option" data-option-array-index="43">Massachusetts</li><li class="active-result group-option" data-option-array-index="44">Michigan</li><li class="active-result group-option" data-option-array-index="45">New Hampshire</li><li class="active-result group-option" data-option-array-index="46">New Jersey</li><li class="active-result group-option" data-option-array-index="47">New York</li><li class="active-result group-option" data-option-array-index="48">North Carolina</li><li class="active-result group-option" data-option-array-index="49">Ohio</li><li class="active-result group-option" data-option-array-index="50">Pennsylvania</li><li class="active-result group-option" data-option-array-index="51">Rhode Island</li><li class="active-result group-option" data-option-array-index="52">South Carolina</li><li class="active-result group-option" data-option-array-index="53">Vermont</li><li class="active-result group-option" data-option-array-index="54">Virginia</li><li class="active-result group-option" data-option-array-index="55">West Virginia</li></ul></div></div>
+      </div>
+      <div ng-controller="DatepickerDemoCtrl as dp" class="form-group mb-xl ng-scope">
+         <label class="control-label mb">by Date</label>
+         <br>
+         <p class="input-group">
+            <input type="text" uib-datepicker-popup="dd-MMMM-yyyy" ng-model="dp.dt" is-open="dp.opened" max-date="'2017-06-22'" uib-datepicker-options="dp.dateOptions" date-disabled="dp.disabled(date, mode)" ng-required="true" close-text="Close" class="form-control ng-pristine ng-valid ng-isolate-scope ng-valid-required ng-valid-date ng-touched" required="required" style=""><!-- ngIf: isOpen -->
+            <span class="input-group-btn">
+               <button type="button" ng-click="dp.open($event)" class="btn btn-default">
+                  <em class="fa fa-calendar"></em>
+               </button>
+            </span>
+         </p>
+      </div>
+      <div class="form-group mb-xl">
+         <label class="control-label mb">by Range</label>
+         <br>
+         <input id="sl2" ui-slider="" type="text" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,750]" class="slider slider-lg form-control">
+      </div>
+      <button class="btn btn-default btn-lg">Apply</button>
+   </div>
+  <div class="panel panel-default">
+         <div class="panel-heading">Search Results
+            <paneltool tool-refresh="traditional" class="pull-right"><a href="#" panel-refresh="" data-spinner="traditional" uib-tooltip="Refresh Panel" class="ng-scope">                       <em class="fa fa-refresh"></em>                     </a></paneltool>
+         </div>
+         <!-- START table-responsive-->
+         <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover">
+               <thead>
+                  <tr>
+                     <th check-all="check-all">
+                        <div data-toggle="tooltip" data-title="Check All" class="checkbox c-checkbox">
+                           <label>
+                              <input type="checkbox">
+                              <span class="fa fa-check"></span>
+                           </label>
+                        </div>
+                     </th>
+                     <th>Description</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>
+                        <div class="checkbox c-checkbox">
+                           <label>
+                              <input type="checkbox">
+                              <span class="fa fa-check"></span>
+                           </label>
+                        </div>
+                     </td>
+                     <td>
+                        <div class="media-box">
+                           <a href="#" class="pull-left">
+                              <img src="app/img/dummy.png" alt="" class="media-box-object img-responsive img-rounded thumb64">
+                           </a>
+                           <div class="media-box-body">
+                              <div class="pull-right btn btn-info btn-sm">View</div>
+                              <h4 class="media-box-heading">Product 1</h4>
+                              <small class="text-muted">Category1, Category2</small>
+                              <p>Sed gravida auctor odio. Sed viverra rutrum hendrerit. Praesent dapibus justo dolor. Suspendisse rhoncus consectetur eros vehicula accumsan.</p>
+                           </div>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="checkbox c-checkbox">
+                           <label>
+                              <input type="checkbox">
+                              <span class="fa fa-check"></span>
+                           </label>
+                        </div>
+                     </td>
+                     <td>
+                        <div class="media-box">
+                           <a href="#" class="pull-left">
+                              <img src="app/img/dummy.png" alt="" class="media-box-object img-responsive img-rounded thumb64">
+                           </a>
+                           <div class="media-box-body">
+                              <div class="pull-right btn btn-info btn-sm">View</div>
+                              <h4 class="media-box-heading">Product 2</h4>
+                              <small class="text-muted">Category1, Category2</small>
+                              <p>Sed gravida auctor odio. Sed viverra rutrum hendrerit. Praesent dapibus justo dolor. Suspendisse rhoncus consectetur eros vehicula accumsan.</p>
+                           </div>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="checkbox c-checkbox">
+                           <label>
+                              <input type="checkbox">
+                              <span class="fa fa-check"></span>
+                           </label>
+                        </div>
+                     </td>
+                     <td>
+                        <div class="media-box">
+                           <a href="#" class="pull-left">
+                              <img src="app/img/dummy.png" alt="" class="media-box-object img-responsive img-rounded thumb64">
+                           </a>
+                           <div class="media-box-body">
+                              <div class="pull-right btn btn-info btn-sm">View</div>
+                              <h4 class="media-box-heading">Product 3</h4>
+                              <small class="text-muted">Category1, Category2</small>
+                              <p>Sed gravida auctor odio. Sed viverra rutrum hendrerit. Praesent dapibus justo dolor. Suspendisse rhoncus consectetur eros vehicula accumsan.</p>
+                           </div>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="checkbox c-checkbox">
+                           <label>
+                              <input type="checkbox">
+                              <span class="fa fa-check"></span>
+                           </label>
+                        </div>
+                     </td>
+                     <td>
+                        <div class="media-box">
+                           <a href="#" class="pull-left">
+                              <img src="app/img/dummy.png" alt="" class="media-box-object img-responsive img-rounded thumb64">
+                           </a>
+                           <div class="media-box-body">
+                              <div class="pull-right btn btn-info btn-sm">View</div>
+                              <h4 class="media-box-heading">Product 4</h4>
+                              <small class="text-muted">Category1, Category2</small>
+                              <p>Sed gravida auctor odio. Sed viverra rutrum hendrerit. Praesent dapibus justo dolor. Suspendisse rhoncus consectetur eros vehicula accumsan.</p>
+                           </div>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="checkbox c-checkbox">
+                           <label>
+                              <input type="checkbox">
+                              <span class="fa fa-check"></span>
+                           </label>
+                        </div>
+                     </td>
+                     <td>
+                        <div class="media-box">
+                           <a href="#" class="pull-left">
+                              <img src="app/img/dummy.png" alt="" class="media-box-object img-responsive img-rounded thumb64">
+                           </a>
+                           <div class="media-box-body">
+                              <div class="pull-right btn btn-info btn-sm">View</div>
+                              <h4 class="media-box-heading">Product 5</h4>
+                              <small class="text-muted">Category1, Category2</small>
+                              <p>Sed gravida auctor odio. Sed viverra rutrum hendrerit. Praesent dapibus justo dolor. Suspendisse rhoncus consectetur eros vehicula accumsan.</p>
+                           </div>
+                        </div>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <!-- END table-responsive-->
+         <div class="panel-footer">
+            <div class="row">
+               <div class="col-lg-2">
+                  <button class="btn btn-sm btn-default">Clear</button>
+               </div>
+               <div class="col-lg-8"></div>
+               <div class="col-lg-2 text-right">
+                  <ul class="pagination pagination-sm">
+                     <li class="active"><a href="#">1</a>
+                     </li>
+                     <li><a href="#">2</a>
+                     </li>
+                     <li><a href="#">3</a>
+                     </li>
+                     <li><a href="#">»</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- END panel-->
+</div></div>
+</section>
+<!-- Page footer-->
+<!-- ngInclude: 'app/views/partials/footer.html' --><footer ng-include="'app/views/partials/footer.html'" class="ng-scope"><span class="ng-binding ng-scope">© 2015 - Shodh</span></footer></div>
+   <script src="app/js/base.js"></script>
+   <script src="app/js/app.js"></script>
+
+
+<div class="flotTip" style="display: none; position: absolute; z-index: 1040; padding: 0.4em 0.6em; border-radius: 0.5em; font-size: 0.8em; border: 1px solid rgb(17, 17, 17); white-space: nowrap; left: 278px; top: 448px; background: rgb(255, 255, 255);"></div></body></html>
